@@ -1,0 +1,173 @@
+
+@font-face {
+  font-family: krypt-font;
+  src: url('../src/krypt-sriracha-regular.ttf');
+}
+*{
+  color: white; 
+  /* letter-spacing: 1px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  /* font-weight: bold; */
+}
+.img-div{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.logo-name{
+  font-family: krypt-font;
+  margin: 0;
+  font-size: x-large;
+}
+/* .navbar{
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  align-items: center;
+  padding: 5px 0;
+  justify-content: space-evenly;
+} */
+.img{
+  width: 80px;
+  height: 80px;
+  margin: 0;
+}
+.rotate{
+  animation: loader infinite 2s linear;
+}
+@keyframes loader {
+  0%{
+    transform: rotate(0);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+/* .login-btn{
+  background-color: rgb(7, 7, 194);
+  padding: 5px 25px;
+  border-radius: 50px;
+} */
+/* .navbar nav{
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  justify-content: space-evenly;
+  align-items: center;
+} */
+
+.blue-glassmorphism{
+  background: rgb(39,51,89,0.4);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0,0,0,0.2);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255,255,255,0.3);
+}
+.white-glassmorphism{
+  background: rgba(255,255,255,0.05);
+  border-radius: 16px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255,255,255,0.3);
+}
+.eth-card{
+  background-color: #a099ff;
+  background-image: 
+  radial-gradient(at 83% 67%, rgb(152,231,156) 0, transparent 58%),
+  radial-gradient(at 67% 20%, hsla(357,94%,71%,1) 0, transparent 59%),
+  radial-gradient(at 88% 35%, hsla(222,81%,65%,1) 0, transparent 50%),
+  radial-gradient(at 31% 91%, hsla(9,61%,61%,1) 0, transparent 52%),
+  radial-gradient(at 27% 71%, hsla(336,91%,65%,1) 0, transparent 49%),
+  radial-gradient(at 74% 89%, hsla(30,98%,65%,1) 0, transparent 51%),
+  radial-gradient(at 53% 75%, hsla(174,94%,68%,1) 0, transparent 45%);
+}
+
+
+/* .parent{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  height: 80%;
+} */
+/* .icon{
+  height: 100%;
+  align-items: center;
+  background-color: white;
+} */
+/* 
+.form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(17, 14, 14);
+  width: 100%;
+  width: 500px;
+} */
+/* .child1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 25px;
+}
+.parent-child{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.child1 h2{
+  font-size: 50px;
+  width: 75%;
+  margin: 0 10px;
+}
+.child1 p{
+  margin: 10px;
+  width: 50%;
+}
+.form input{
+  margin: 25px;
+  width: 50%;
+
+}
+.connect-btn{
+  background-color: rgb(7, 7, 194);
+  padding: 5px 25px;
+  border-radius: 25px;
+  margin: 10px;
+}
+.child2{
+  margin: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+} */
+
+
+.text-gradient{
+  background-color: #fff;
+  background-image: radial-gradient(at 4% 36%, hsla(0,0%,100%,1)0, transparent 53%), radial-gradient(at 100% 60%, rgb(0,0,0)0, transparent 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.gradient-bg-transactions{
+  background-color: #0f0e13;
+  background-image: radial-gradient(at 0% 100%, hsla(253,16%,7%,1)0, transparent 50%),
+  radial-gradient(at 50% 0%, hsla(225,39%,25%,1)0, transparent 50%);
+}
+
+.gradient-bg-welcome{
+  background: linear-gradient(90deg, #030068 0%, #00ac5c 100%);
+
+  /* background-image: radial-gradient(at 0% 100%, rgba(35,0,36,1) 0%, transparent 53%),
+  radial-gradient(at 50% 150%, rgba(121,9,79,1) 42%, transparent 50%),
+  radial-gradient(at 50% 150%, rgb(81, 0, 116) 100%, transparent 50%); */
+
+  /* background: rgb(35,0,36);
+  background: linear-gradient(90deg, rgba(35,0,36,1) 0%, rgba(121,9,79,1) 42%, rgb(81, 0, 116) 100%); */
+}
