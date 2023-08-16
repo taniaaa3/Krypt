@@ -29,7 +29,7 @@ function App() {
     
     useEffect(()=>{
       checkIfTransactionExists();
-      // allTransactions();
+      
     },[allTrans])
     
     const handleChange = (e,name)=>{
@@ -42,17 +42,19 @@ function App() {
     const sendtx = async()=>{
       
       if (ethereum === undefined || ethereum.isConnected() === false) {
-        alert('Connect Your Wallet First :(')
+        alert('Connect Your Wallet First :(');
       }
       else if (ethereum.isConnected() === true) {
+        
         const transfer = async()=>{
           const signer = new ethers.BrowserProvider(await ethereum).getSigner();
+          
           (await signer).sendTransaction(
             {
               to: addressTo,
               value: ethers.parseEther(amount)
             }
-            );
+          );
                         const setContract = new ethers.Contract(contractAddress, ABI, await provider.getSigner());
                         const transaction =  await setContract.addToBlockchain(
                             addressTo,
@@ -65,9 +67,11 @@ function App() {
                         }
                         await transfer();
                 setIsLoader(false); 
-            }
+                      }
            await allTransactions();
+           window.location.reload();
     }
+  
     
     const checkIfTransactionExists = async()=>{
         const count = Number(await getContract.getTransactionCount());
@@ -94,7 +98,6 @@ function App() {
         i++;
       }
       setAllTrans(me.reverse());
-      console.log('done');
     }
 
     
@@ -150,7 +153,6 @@ function App() {
     <div className='min-h-screen'>
     <div className='gradient-bg-welcome'>
     <Navbar/>
-    
     <Home connectWallet={connectWallet} checkIfTransactionExists={checkIfTransactionExists} sendtx={sendtx} isLoader={isLoader} accounts={accounts} handleChange={handleChange} shortAddress= {shortAddress} setAccounts={setAccounts} setShortAddress={setShortAddress} formData={formData} setFormData={setFormData}/>
     <Services/>
     <Transactions formData={formData} allTrans={allTrans}  accounts={accounts} shortAddress={shortAddress}/>
